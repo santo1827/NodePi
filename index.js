@@ -12,8 +12,5 @@ app.get('/hello', (req, res) => {
     res.json("Hello everyone!!!")
 })
 
-app.get('/test', (req, res) => {
-    res.json('This is so cool!!')
-})
 
 app.listen(port, () => console.log(`Server listening on Port: ${port}`))
