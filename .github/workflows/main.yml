@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Install Dependancies
+      - run: npm i
+
+      - name: Checkout Code
+      - uses: actions/checkout@v2
