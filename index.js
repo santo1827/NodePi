@@ -4,9 +4,6 @@ port = 5000
 
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Hello world!')
-})
 
 app.get('/hello', (req, res) => {
     res.json("Hello everyone!!!")
