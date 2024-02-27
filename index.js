@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
     res.send('Hello world!')
 })
 
+app.get('/hello', (req, res) => {
+    res.json("Hello everyone!!!")
+})
+
 app.listen(port, () => console.log(`Server listening on Port: ${port}`))
